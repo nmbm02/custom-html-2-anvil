@@ -1,0 +1,43 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {align: center, text: 'Nhập vào số nguyên n:'}
+  type: Label
+  layout_properties: {grid_position: 'LAMWUV,YGAMWD'}
+- name: txtInput
+  properties: {align: center, type: text, hide_text: false, visible: true}
+  type: TextBox
+  layout_properties: {grid_position: 'THRAGX,KYDQPN'}
+  event_bindings: {pressed_enter: txtInput_pressed_enter}
+- name: label_2
+  properties: {align: center, text: 'Dãy số:'}
+  type: Label
+  layout_properties: {grid_position: 'LREUQD,GDHCXT'}
+- name: lblArray
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'XVOQKU,LPSFAR'}
+- name: btnInput
+  properties: {text: Nhập}
+  type: Button
+  layout_properties: {grid_position: 'DEHYHN,DCEECV'}
+  event_bindings: {click: btnInput_click}
+- name: btnDelete
+  properties: {text: Xóa}
+  type: Button
+  layout_properties: {grid_position: 'IZXWIM,HOURIN'}
+  event_bindings: {click: btnDelete_click}
+- name: btnSort
+  properties: {text: Sắp xếp}
+  type: Button
+  layout_properties: {grid_position: 'IMIBXJ,TRUKKI'}
+  event_bindings: {click: btnSort_click}
+- name: label_3
+  properties: {align: center, text: 'Dãy số sau khi được sắp xếp:'}
+  type: Label
+  layout_properties: {grid_position: 'HSNEAJ,LRQACJ'}
+- name: lblSortArray
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'HLXDNE,HYAFGA'}
+is_package: true
